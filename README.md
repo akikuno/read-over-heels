@@ -1,5 +1,9 @@
 # read-over-heels
 
+
+https://akikuno.github.io/read-over-heels/
+
+
 ## Setup
 ```bash
 pip install -U pip pelican markdown ghp-import
@@ -18,7 +22,7 @@ make serve
 ## Themeの適応
 
 ```bash
-git clone --recursive https://github.com/getpelican/pelican-themes ./pelican-themes
+[ -d pelican-themes/simplify-theme ] || git clone --recursive https://github.com/vuquangtrong/simplify-theme ./pelican-themes/simplify-theme
 ```
 
 `pecicannonf.py`に以下を追加
