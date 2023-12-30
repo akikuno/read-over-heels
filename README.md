@@ -10,7 +10,7 @@ pip install -U pip pelican markdown ghp-import
 ```
 
 ```bash
-pelican-quickstart
+[ -f pelicanconf.py ] || pelican-quickstart
 ```
 
 
