@@ -1,0 +1,4 @@
+pelican-themes
+pelican-themes/*
+output/*
+__pycache__/*
