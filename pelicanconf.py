@@ -17,18 +17,10 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
-# Blogroll
-LINKS = (
-    ("Pelican", "https://getpelican.com/"),
-    ("Python.org", "https://www.python.org/"),
-    ("Jinja2", "https://palletsprojects.com/p/jinja/"),
-    ("You can modify those links in your config file", "#"),
-)
-
-# Social widget
+# SNS周りの設定
 SOCIAL = (
-    ("You can add links in your config file", "#"),
-    ("Another social link", "#"),
+    ('twitter', 'https://twitter.com/akicuno'),
+    ('gitHub', 'https://github.com/akikuno'),
 )
 
 DEFAULT_PAGINATION = 10
@@ -46,3 +38,12 @@ MARKDOWN = {
 }
 
 SITEURL = 'https://akikuno.github.io/read-over-heels'
+
+
+# ページ下部にライセンス表記を追加
+COPYRIGHT_NAME = "akikuno"
+CC_LICENSE = {
+    "name": "Creative Commons Attribution-ShareAlike",
+    "version": "4.0",
+    "slug": "by-sa"
+}

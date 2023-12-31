@@ -23,6 +23,8 @@ make serve
 
 ```bash
 [ -d pelican-themes/simplify-theme ] || git clone --recursive https://github.com/vuquangtrong/simplify-theme ./pelican-themes/simplify-theme
+
+git clone https://github.com/alexandrevicenzi/Flex.git ./pelican-themes/flex
 ```
 
 `pecicannonf.py`に以下を追加
