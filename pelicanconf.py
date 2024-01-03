@@ -3,7 +3,7 @@ SITENAME = 'Read Over Heels'
 SITEURL = 'https://akikuno.github.io/read-over-heels'
 TIMEZONE = 'Asia/Tokyo'
 DEFAULT_LANG = 'ja'
-DATE_FORMATS = {'jp': '%Y-%m-%d'}
+DATE_FORMATS = {'ja': '%Y-%m-%d'}
 
 PATH = "content"
 THEME = "./pelican-themes/simplify-theme"
@@ -14,6 +14,16 @@ ARTICLE_SAVE_AS = 'blog/{slug}.html'
 ARTICLE_PRIMARY_PATH = 'blog'
 
 PAGE_PATHS = ['pages']
+
+# Advanced Settings
+FORMATTED_FIELDS = [] # removed 'summary'
+STATIC_PATHS = [
+	'images',
+	'favicon.ico',
+    'logo.png',
+	'.htaccess',
+	'robots.txt'
+]
 
 
 # Feed generation is usually not desired when developing

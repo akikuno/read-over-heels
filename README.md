@@ -36,6 +36,7 @@ THEME = './pelican-themes/simplify-theme'
 ## GitHub Pagesへのデプロイ
 
 ```bash
+rm -rf output
 pelican content -s pelicanconf.py -t ./pelican-themes/simplify-theme
 ghp-import output -b gh-pages
 git push origin gh-pages
