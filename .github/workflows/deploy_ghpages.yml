@@ -27,5 +27,4 @@ jobs:
           pelican content -s pelicanconf.py -t ./content/themes/simplify-theme
           ghp-import output
           git pull origin main
-          git pull origin gh-pages:gh-pages
           git push origin gh-pages:gh-pages
