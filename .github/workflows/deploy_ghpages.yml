@@ -4,6 +4,11 @@ on: push
 
 jobs:
   build-n-publish:
+    permissions:
+      actions: write
+      checks: write
+      contents: write
+
     name: Build and publish to GitHub Pages
     runs-on: ubuntu-latest
     steps:
