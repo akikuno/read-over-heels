@@ -28,5 +28,5 @@ jobs:
           ghp-import output
           git config --global pull.rebase false
           git pull origin main
-          git pull origin gh-pages
+          git pull --allow-unrelated-histories origin gh-pages
           git push origin gh-pages:gh-pages
