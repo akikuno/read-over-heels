@@ -19,6 +19,6 @@ jobs:
 
       - name: Publish to GitHub Pages
         run: |
-          pelican content -o output -s publishconf.py
+          pelican content -s pelicanconf.py -t ./content/themes/simplify-theme
           ghp-import output
           git push origin gh-pages:gh-pages

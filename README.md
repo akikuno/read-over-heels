@@ -37,7 +37,7 @@ THEME = './pelican-themes/simplify-theme'
 
 ```bash
 rm -rf output
-pelican content -s pelicanconf.py -t ./pelican-themes/simplify-theme
+pelican content -s pelicanconf.py -t ./content/themes/simplify-theme
 ghp-import output -b gh-pages
 git push origin gh-pages
 ```
