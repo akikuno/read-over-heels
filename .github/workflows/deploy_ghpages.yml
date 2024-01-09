@@ -1,0 +1,24 @@
+name: Deploy to GitHub Pages
+
+on: push
+
+jobs:
+  build-n-publish:
+    name: Build and publish to GitHub Pages
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.x
+
+      - name: Install pip
+        run: pip install -U pip pelican markdown ghp-import
+
+      - name: Publish to GitHub Pages
+        run: |
+          pelican content -o output -s publishconf.py
+          ghp-import output
+          git push origin gh-pages:gh-pages
