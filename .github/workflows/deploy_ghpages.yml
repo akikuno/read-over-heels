@@ -1,32 +1,32 @@
-name: Deploy to GitHub Pages
+# name: Deploy to GitHub Pages
 
-on: push
+# on: push
 
-jobs:
-  build-n-publish:
-    permissions:
-      actions: write
-      checks: write
-      contents: write
+# jobs:
+#   build-n-publish:
+#     permissions:
+#       actions: write
+#       checks: write
+#       contents: write
 
-    name: Build and publish to GitHub Pages
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
+#     name: Build and publish to GitHub Pages
+#     runs-on: ubuntu-latest
+#     steps:
+#       - uses: actions/checkout@v3
 
-      - name: Set up Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: 3.x
+#       - name: Set up Python
+#         uses: actions/setup-python@v4
+#         with:
+#           python-version: 3.x
+# a
+#       - name: Install pip
+#         run: pip install -U pip pelican markdown ghp-import
 
-      - name: Install pip
-        run: pip install -U pip pelican markdown ghp-import
-
-      - name: Publish to GitHub Pages
-        run: |
-          pelican content -s pelicanconf.py -t ./content/themes/simplify-theme
-          ghp-import output
-          git config --global pull.rebase false
-          git pull origin main
-          git pull --allow-unrelated-histories origin gh-pages
-          git push origin gh-pages:gh-pages
+#       - name: Publish to GitHub Pages
+#         run: |
+#           pelican content -s pelicanconf.py -t ./content/themes/simplify-theme
+#           ghp-import output
+#           git config --global pull.rebase false
+#           git pull origin main
+#           git pull --allow-unrelated-histories origin gh-pages
+#           git push origin gh-pages:gh-pages
