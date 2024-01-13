@@ -1,12 +1,12 @@
 AUTHOR = 'akikuno'
-SITENAME = 'Read Over Heels'
+SITENAME = '耽読日記'
 SITEURL = 'https://akikuno.github.io/read-over-heels'
 TIMEZONE = 'Asia/Tokyo'
 DEFAULT_LANG = 'ja'
 DATE_FORMATS = {'ja': '%Y-%m-%d'}
 
 PATH = "content"
-THEME = "./pelican-themes/simplify-theme"
+THEME = "./content/themes/simplify-theme"
 
 ARTICLE_PATHS = ['blog']
 ARTICLE_URL = 'blog/{slug}.html'
